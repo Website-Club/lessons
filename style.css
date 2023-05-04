@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  background-image: url("./data/banner.png");
+  background-image: url("./data/Banner.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
