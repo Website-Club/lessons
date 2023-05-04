@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML and CSS intro</title>
+    <script>
+      // We have not covered this yet, so don't worry about it
+      function handleSubmitEvent(event) {
+        event.preventDefault();
+        alert(
+          `Form submitted! \n First Name: ${event.target.fname.value} \n Last Name: ${event.target.lname.value} \n Email: ${event.target.email.value} \n Phone Number: ${event.target.phone.value}`
+        );
+      }
+    </script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a href="../index.html" class="return">Return Home</a>
+    <h1>Contact form</h1>
+    <hr>
+    <details>
+      <summary>Requirements</summary>
+      <ul>
+        <li>First Name</li>
+        <li>Last Name</li>
+        <li>Email</li>
+        <li>Phone Number</li>
+      </ul>
+    </details>
+
+    <form onsubmit="handleSubmitEvent(event)">
+      <div class="formInputContainer">
+        <label class="formInput">
+          First Name
+          <input type="text" name="fname" placeholder="First Name:" />
+        </label>
+        <label class="formInput">
+          Last Name
+          <input type="text" name="lname" placeholder="Last Name:" />
+        </label>
+        <label class="formInput">
+          Email
+          <input type="email" name="email" placeholder="Email:" />
+        </label>
+        <label class="formInput">
+          Phone Number
+          <input type="tel" name="phone" placeholder="Phone Number:" />
+        </label>
+      </div>
+      <button id="submitButton">Submit</button>
+    </form>
+  </body>
+</html>

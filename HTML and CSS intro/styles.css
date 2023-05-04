@@ -1,0 +1,132 @@
+body {
+  font-family: sans-serif;
+  /*removes white border from page*/
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+
+  /*makes the content flow vertically and align to the center fo the page.*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.return {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.return:hover {
+  background-color: #3e8e41;
+}
+
+h1 {
+  text-align: center;
+  margin: 5px;
+}
+
+hr {
+  width: 40%;
+  margin: 0;
+}
+
+details {
+  /*width fit-content, makes the width only what the content needs*/
+  width: fit-content;
+  padding: 20px;
+  text-align: center;
+}
+
+details summary {
+  font-size: 1.5em;
+  font-weight: bold;
+  /*changes the cursor type*/
+  cursor: pointer;
+}
+
+details ul {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+}
+
+details ul li {
+  /*direction specifiers can be used on padding, border and more, to only affect that specific part of an element*/
+  margin-bottom: 10px;
+}
+
+form {
+  width: 40%;
+  padding: 20px;
+}
+
+.formInputContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.formInput {
+  display: flex;
+  flex-direction: column;
+}
+
+.formInput input[type="text"],
+.formInput input[type="email"],
+.formInput input[type="tel"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: 0.25s;
+}
+
+.formInput input[type="text"]:focus,
+.formInput input[type="email"]:focus,
+.formInput input[type="tel"]:focus {
+  outline: none;
+  border: 1px solid #4caf50;
+}
+
+.formInput input[type="text"]:hover,
+.formInput input[type="email"]:hover,
+.formInput input[type="tel"]:hover {
+  border: 1px solid #4caf50;
+}
+
+/** You probably should not use an id for this elements style, this is just to showcase the ability to.*/
+#submitButton {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+#submitButton:hover {
+  background-color: #3e8e41;
+}
+
+#submitButton:active {
+  background-color: #3e8e41;
+  transform: scale(1.01);
+}
+
+#submitButton:focus {
+  outline: none;
+}
